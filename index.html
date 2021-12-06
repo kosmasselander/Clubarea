@@ -85,6 +85,11 @@
             background-size: cover;
             background-repeat: none;
         }
+        .backgrounds .text1{
+          position: absolute;
+          left: 400px;
+          top: 300px;
+        }
         img {
             width: 100%;
             height: 100%;
@@ -110,7 +115,7 @@
         }
         .overlay-content {
             position: absolute;
-            top: 25%;
+            top: 22%;
             width: 100%;
             text-align: center;
             margin-top: 30px;
@@ -206,24 +211,27 @@
           li {font-size: calc(1.125rem * var(--smaller));}
           li span {font-size: calc(3.375rem * var(--smaller));}
         }
+        .text1{
+          position: absolute;
+          top: 350px;
+          left: 900px;
+          right: 370px;
+          font-size: 20px;
+          color: white;
+          text-align: justify;
+          font-size: 25px;
+        }
+        .text2{
+          position: absolute;
+          top: 300px;
+          left: 370px;
+        }
         .second{
           background-color: white;
           width: 1920px;
           height: 800px;
           position: absolute;
           top: 900px;
-        }
-        .text1{
-          position: absolute;
-          top: 350px;
-          left: 900px;
-          right: 400px;
-          font-size: 20px;
-        }
-        .text2{
-          position: absolute;
-          top: 300px;
-          left: 370px;
         }
         .third{
           background: url(./Hình/wallpapersden.com_artistic-landscape-view_1920x1080.jpg);
@@ -238,7 +246,8 @@
           font-size: 20px;
         }
         .fouth{
-          background-color: wheat;
+          background-image: url(Hình/pietro-de-grandi-T7K4aEPoGGk-unsplash.jpg);
+          opacity: 0.88;
           width: 100%;
           height: 580px;
           position: absolute;
@@ -248,9 +257,10 @@
           box-sizing: border-box;
         }
         .fifth{
-          background-color: red;
+          background-color: orangered;
+          background-image: url(Hình/kso.png);
           width: 100%;
-          height: 620px;
+          height: 100px;
           position: absolute;
           top: 2581px;
           box-sizing: border-box;
@@ -260,12 +270,37 @@
         }
         .sixth{
           background-color: orangered;
+          background-image: url(Hình/20427740.jpg);
           width: 100%;
           height: 600px;
           position: relative;
           top: 3200px;
           box-sizing: border-box;
           text-align: center;
+        }
+        .mot{
+          width: 600px;
+          max-height: 400px;
+          background-color: wheat;
+          position: absolute;
+          top: 50px;
+          left: 650px; 
+        }
+        .hai{
+          width: 600px;
+          max-height: 400px;
+          background-color: wheat;
+          position: absolute;
+          top: 150px;
+          left: 650px; 
+        }
+        .ba{
+          width: 600px;
+          max-height: 400px;
+          background-color: wheat;
+          position: absolute;
+          top: 380px;
+          left: 650px; 
         }
         .seventh{
           background-color: orange;
@@ -400,30 +435,6 @@
         @media only screen and (max-width: 300px) {
           .prev, .next,.text {font-size: 11px}
         }
-        .mot{
-          width: 600px;
-          max-height: 400px;
-          background-color: wheat;
-          position: absolute;
-          top: 50px;
-          left: 650px; 
-        }
-        .hai{
-          width: 600px;
-          max-height: 400px;
-          background-color: wheat;
-          position: absolute;
-          top: 170px;
-          left: 650px; 
-        }
-        .ba{
-          width: 600px;
-          max-height: 400px;
-          background-color: wheat;
-          position: absolute;
-          top: 380px;
-          left: 650px; 
-        }
         .column {
           float: left;
           width: 33.33%;
@@ -475,22 +486,13 @@
           background-color: #f2f2f2;
           padding: 20px;
         }
-        .fifth>.ein{
-          background-color: darkslategray;
-          width: 500px;
-          height: 100px;
-          position: absolute;
-          top: 160px;
-          left: 200px;
-          text-align: center;
-        }
         .fifth>.zwei{
           background-color: darkslategray;
           width: 500px;
           height: 100px;
           position: absolute;
-          top: 160px;
-          left: 1230px;
+          top: 220px;
+          left: 900px;
           text-align: center;
         }
         .fifth>.drei{
@@ -498,8 +500,8 @@
           width: 500px;
           height: 100px;
           position: absolute;
-          top: 360px;
-          left: 200px;
+          top: 330px;
+          left: 900px;
           text-align: center;
         }
         .fifth>.vier{
@@ -507,8 +509,8 @@
           width: 500px;
           height: 100px;
           position: absolute;
-          top: 360px;
-          left: 1230px;
+          top: 440px;
+          left: 900px;
           text-align: center;
         }
         footer>.circle1{
@@ -589,6 +591,7 @@
           <a href="#">Khách hàng</a>
           <a href="#">Tin tức</a>
           <a href="#">Liên kết</a>
+          <a href="#">Đối tác</a>
         </div>
     </div>
     <div id="container">
@@ -606,6 +609,7 @@
             </div>
         </div>
         <div class="second">
+          <img src="Hình/photo-1534787238916-9ba6764efd4f.jpg" style="opacity: 0.5; width: 100%; height: 100%">
           <div class="text1">
             <strong>Về chúng tôi
               Câu lạc bộ Đạp xe ClubArea được thành lập vào năm 1999 và khuyến khích các hoạt động đạp xe an toàn, thành tích thể chất và lợi ích xã hội của việc đạp xe theo nhóm.</strong>
@@ -621,7 +625,8 @@
           <p><h1><strong>câu lạc bộ trong tháng trước!</p></strong></h1>
         </div>
         <div class="fouth">
-          <h1>Đội ngũ chúng tôi</h1>
+          <br>
+          <h1><strong>Đội ngũ chúng tôi</h1></strong>
           <br>
           <p><strong>hỗ trợ và tư vấn cho khách hàng bằng sự nhiệt tình, hoạt bát và nhanh nhẹn mang lại trải nghiệm đáng nhớ</p><br></strong>
           <div id="shiva"><span class="count"><strong>200</strong></span></div>
@@ -636,11 +641,12 @@
           </div>
         </div>
         <div class="fifth">
-          <h1 style="font-size: 50px">Chúng tôi sẽ cung cấp những gì?</h1><br>
-          <div class="ein">
-            Câu lạc bộ của chúng tôi là địa điểm số 1 dành cho những người đam mê và chuyên nghiệp về xe đạp. Chúng tôi cung cấp nhiều cơ hội cho người lớn và trẻ em.<br><br> 
-          </div>
-          <div class="zwei">
+          <h1 style="font-size: 50px">Chúng tôi sẽ cung cấp những gì?</h1><br><br>
+            <p style="color:black; font-size: 20px; width: 1200px; text-align: center;padding-left: 660px; padding-right: -900px;"><strong>Câu lạc bộ của chúng tôi là địa điểm số #1 dành cho những người đam mê và chuyên nghiệp về xe đạp. Chúng tôi cung cấp nhiều cơ hội cho người lớn và trẻ em.</strong><br><br></p> 
+          <img src="Hình/bike.png" alt="bike" style="position: absolute; left: 600px; top: 220px; width: 5%; height: auto">
+          <img src="Hình/mission.png" alt="bike" style="position: absolute; left: 600px; top: 330px; width: 5%; height: auto">
+          <img src="Hình/weather.png" alt="bike" style="position: absolute; left: 600px; top: 430px; width: 5%; height: auto">
+            <div class="zwei">
             <h1>Cyclocross</h1><br>
             Cyclocross là lựa chọn hoàn hảo để phát triển kỹ năng đi xe đạp và bắt đầu với việc đua xe đạp.<br><br>
           </div>
@@ -677,20 +683,25 @@
           <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
+              <div class="numbertext">1 / 4</div>
               <img src="./Hình/20-Villa-Sawarin-Cape-Yamu-Phuket-Fitness-Room.jpg" style="width:100%; max-height: 700px">
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
+              <div class="numbertext">2 / 4</div>
               <img src="./Hình/ShouldYouOpenaFitnessStudio.jpg" style="width:100%; max-height: 700px">
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
+              <div class="numbertext">3 / 4</div>
               <img src="./Hình/1cd9c105983f543f0037350b1be9bbe1.jpg" style="width:100%; max-height: 700px">
             </div>
             
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="./Hình/photo-1501785888041-af3ef285b470.jfif" style="width:100%; max-height: 700px">
+            </div>
+
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
             
@@ -700,7 +711,8 @@
             <div style="text-align:center">
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span> 
             </div>
         </div>
         <div class="eighth">
@@ -737,7 +749,7 @@
         </div>
         <div class="nineth">
           <div>
-            <h1><strong>HỖ TRỢ TRỢ GIÚP TƯ VẤN MUA HÀNG</strong></h1>
+            <h1><strong>HỖ TRỢ TƯ VẤN THÔNG TIN HỆ THỐNG</strong></h1>
             <form action="/action_page.php" style="width: 500px; height: auto; position: absolute; left: 690px; top: 160px">
               <label for="fname">Họ tên</label>
               <input type="text" id="fname" name="firstname" placeholder="Họ tên..">
@@ -788,8 +800,8 @@
         </footer>
         <div class="backgrounds">
             <div class="text1">
-                <h2 style="font-size: 50px; color: white">ĐÓ LÀ TẤT CẢ THUỘC VỀ BẠN</h2>
-                <h1 style="font-size: 140px; color: red">CLUBAREA</h1>
+                <h2 style="font-size: 50px; color: white"><strong>ĐÓ LÀ TẤT CẢ THUỘC VỀ BẠN</h2></strong>
+                <h1 style="font-size: 140px; color: orangered"><strong>CLUBAREA</h1></strong>
             </div>
             <img src="./Hình/photo-1508205065970-cad01cebebb4.jfif">
             <button class="button">Xem thêm</button>
@@ -799,10 +811,10 @@
       <h1 id="headline">Đếm ngược đợt ưu đãi thành viên lớn nhất trong năm</h1>
       <div id="countdown">
         <ul>
-          <li><span id="days"></span>days</li>
-          <li><span id="hours"></span>Hours</li>
-          <li><span id="minutes"></span>Minutes</li>
-          <li><span id="seconds"></span>Seconds</li>
+          <li><span id="days"></span>Ngày</li>
+          <li><span id="hours"></span>Giờ</li>
+          <li><span id="minutes"></span>Phút</li>
+          <li><span id="seconds"></span>Giây</li>
         </ul>
       </div>
     </div>
@@ -821,6 +833,9 @@
     }
     function openNav() {document.getElementById("myNav").style.width = "100%";}
     function closeNav() {document.getElementById("myNav").style.width = "0%";}
+
+// Đếm ngược thời gian
+
     (function () {
       const second = 1000,
             minute = second * 60,
@@ -851,7 +866,7 @@
               document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
 
             if (distance < 0) {
-              document.getElementById("headline").innerText = "It's my birthday!";
+              document.getElementById("headline").innerText = "Hết giờ rồi!";
               document.getElementById("countdown").style.display = "none";
               document.getElementById("content").style.display = "block";
               clearInterval(x);
@@ -859,6 +874,7 @@
             //seconds
           }, 0)
       }());
+
       var slideIndex = 1;
     showSlides(slideIndex);
 
